@@ -550,12 +550,12 @@ h6 {
    background: url(../images/banner/temp_joe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    min-height: 130px;
+    background-position: top;/*center;*/
+    min-height: 180px;/*130px;*/
 }
 .testimonial-cnt {
-	font-size: 16px;/*20px;*/
-	line-height: 22px;/*30px*/
+	font-size: 18px;/*20px;*/
+	line-height: 26px;/*30px*/
 }
 .author {
 	font-family: 'Merriweather', serif;
