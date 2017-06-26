@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 1200px){
+.modal-lg {
+    width: 1100px;
+}
+}
+.modal-content{
+	border-radius:0;
+	border:0	
+}
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 0px solid #e5e5e5;
+}
+.modal-header .close {
+    margin-top: -2px;
+    background: ;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 1;
+    color: #fff;
+    
+    font-size: 0;
+    margin-top: -16px;
+    margin-right: -15px;
+	background:url(../images/modal-close.png) no-repeat 7px 6px #6a6a6a;
+	width:30px;
+	height:27px;
+}
+.contacts-info {
+	
+}
+.contacts-info-title {
+	background-color: #ff6400;
+	color: #fff;
+	padding: 30px;
+	text-transform: uppercase
+}
+.contacts-info-title-icon {
+	float: left;
+	font-size: 40px;
+	line-height: 46px;
+	margin-right: 25px
+}
+.contacts-info-title h3 {
+	font-size: 25px;
+	color: #fff;
+	margin: 0;
+	padding-left: 64px
+}
+.contacts-info-text {
+	margin: 20px 0;
+	text-align: justify;
+	font-size:14px;
+	line-height:18px;
+}
+.contacts-info-people {
+	float: right;
+	text-align: right
+}
+.contacts-info-people-avatar {
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 20px
+}
+.contacts-info-people-name {
+	float: left;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 2px
+}
+.contacts-info-people-company {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 10px
+}
+.cnt-phone-email{
+	font-size:14px;
+	line-height:22px;
+	padding-top:10px	
+}
+.contacts-form {
+	margin-top: -10px
+}
+.contacts-form h1{
+	color:#ff6400
+}	
+.contacts-form-item {
+	margin-bottom: 20px
+}
+.contacts-form-item input[type=text], .contacts-form-item input[type=password], .contacts-form-item textarea {
+	background-color: #fff;
+	border: none;
+	border-bottom: 1px solid #c4c4c4;
+	width: 100%;
+	padding-bottom:5px;
+}
+input:focus, select:focus, textarea:focus {
+    outline:#ff6400 solid 1px;
+	padding-left:10px
+}
+.contacts-form-item select{
+	border:0;
+		border-bottom: 1px solid #c4c4c4;
+		width: 100%;
+		padding-bottom:5px;
+}
+.contacts-form-item textarea {
+	height: 130px
+}
+.contacts-form-item ::-webkit-input-placeholder {
+color:#3e4f59
+}
+.contacts-form-item :-moz-placeholder {
+color:#3e4f59;
+opacity:1
+}
+.contacts-form-item ::-moz-placeholder {
+color:#3e4f59;
+opacity:1
+}
+.contacts-form-item :-ms-input-placeholder {
+color:#3e4f59
+}
+.contacts-form-button {
+	text-align: right;
+	margin-bottom: 0
+}
+.contact-details {
+	background-color: #efeeee;
+	padding: 0;
+	
+}
+.contact-details .container{
+	display:table
+}	
+.contact-details .row{
+	display:table-row	
+}
+.contact-detail {
+	    color: #fff;
+    text-align: center;
+    padding: 50px 15px;
+    position: relative;
+    display: table-cell;
+    float: none;
+	vertical-align:middle
+}
+.contact-detail:after {
+	top: 0;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255,255,255,0);
+	border-top-color: #fff;
+	border-width: 30px;
+	margin-left: -30px
+}
+.contact-detail-icon {
+	font-size: 40px
+}
+.contact-detail-title h3 {
+	font-size: 18px;
+	position: relative;
+	margin: 20px 0 15px;
+	color:#ff6400;
+	font-weight:600
+}
+/*.contact-detail-title h3:before {
+	position: absolute;
+	content: "";
+	background-color: #fff;
+	width: 26px;
+	height: 2px;
+	bottom: -25px;
+	left: 50%;
+	margin-left: -13px
+}*/
+.contact-detail-text {
+	color:#21252b;
+	font-size:14px
+}
+.contact-detail-text-md{
+	padding-top:15px;
+	padding-bottom:15px;
+	color:#fff	
+}
+.contact-detail-mark {
+	background-color: #ff6400
+}
+.contact-detail-mark .contact-detail-icon {
+	color: #00c0e2
+}
+.contact-detail-mark .contact-detail-title h3:before {
+	background-color: #00c0e2
+}
+.contact-detail-icon.phone{
+	height:60px	
+}
+.contact-map {
+	height: 450px
+}
+.map-sec .col-sm-6{
+	padding:0	;
+	border-right:solid 5px #fff
+}
+.map-sec .col-sm-6+.col-sm-6{
+	border:0	
+}
+@media (max-width:991px){
+.contacts-info {
+	margin-top:25px
+}
+}
+@media (max-width:767px){
+.contact-detail {
+    display: block;
+}
+}
+
+.preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 100
+}
+.cssload-container {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	top: 50%;
+	margin-top: -40px;
+	left: 50%;
+	margin-left: -40px
+}
+.cssload-whirlpool, .cssload-whirlpool::after, .cssload-whirlpool::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 2px solid rgba(204,204,204,0);
+	border-left-color: #ff6400;
+	border-radius: 1873px;
+	-o-border-radius: 1873px;
+	-ms-border-radius: 1873px;
+	-webkit-border-radius: 1873px;
+	-moz-border-radius: 1873px
+}
+.cssload-whirlpool {
+	margin: -47px 0 0 -47px;
+	height: 94px;
+	width: 94px;
+	animation: cssload-rotate 1150ms linear infinite;
+	-o-animation: cssload-rotate 1150ms linear infinite;
+	-ms-animation: cssload-rotate 1150ms linear infinite;
+	-webkit-animation: cssload-rotate 1150ms linear infinite;
+	-moz-animation: cssload-rotate 1150ms linear infinite
+}
+.cssload-whirlpool::before {
+	content: "";
+	margin: -43px 0 0 -43px;
+	height: 83px;
+	width: 83px;
+	animation: cssload-rotate 1150ms linear infinite;
+	-o-animation: cssload-rotate 1150ms linear infinite;
+	-ms-animation: cssload-rotate 1150ms linear infinite;
+	-webkit-animation: cssload-rotate 1150ms linear infinite;
+	-moz-animation: cssload-rotate 1150ms linear infinite
+}
+.cssload-whirlpool::after {
+	content: "";
+	margin: -54px 0 0 -54px;
+	height: 105px;
+	width: 105px;
+	animation: cssload-rotate 2300ms linear infinite;
+	-o-animation: cssload-rotate 2300ms linear infinite;
+	-ms-animation: cssload-rotate 2300ms linear infinite;
+	-webkit-animation: cssload-rotate 2300ms linear infinite;
+	-moz-animation: cssload-rotate 2300ms linear infinite
+}
+@keyframes cssload-rotate {
+100% {
+transform:rotate(360deg)
+}
+}
+@-o-keyframes cssload-rotate {
+100% {
+-o-transform:rotate(360deg)
+}
+}
+@-ms-keyframes cssload-rotate {
+100% {
+-ms-transform:rotate(360deg)
+}
+}
+@-webkit-keyframes cssload-rotate {
+100% {
+-webkit-transform:rotate(360deg)
+}
+}
+@-moz-keyframes cssload-rotate {
+100% {
+-moz-transform:rotate(360deg)
+}
+}
