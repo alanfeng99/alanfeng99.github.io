@@ -1397,10 +1397,6 @@ h6 {
     content: url(../images/banner/chatroom1.png);
 }
 
-.chatroom img:hover {
-    content: url(../images/banner/chatroom2.png);
-}
-
 .youtube {
     background: url(../images/banner/block_youtube.jpg) center center;
     background-size: cover;
@@ -1408,10 +1404,6 @@ h6 {
 
 .youtube img {
     content: url(../images/banner/youtube1.png);
-}
-
-.youtube img:hover {
-    content: url(../images/banner/youtube2.png);
 }
 
 .recommerd {
@@ -1425,10 +1417,6 @@ h6 {
 
 .blog img {
     content: url(../images/banner/blog1.png);
-}
-
-.blog img:hover {
-    content: url(../images/banner/blog2.png);
 }
 
 .chatroom, .youtube, .recommerd, .blog {
