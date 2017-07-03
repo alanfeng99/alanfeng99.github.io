@@ -711,6 +711,12 @@ h6 {
 	height:635px;
 }
 
+.ielts-courses-banner{
+	background:url(../images/banner_ielts_courses.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;
+}
+
 .courses-banner{
 	background:url(../images/inner-banner.jpg) no-repeat	
 }
@@ -1698,39 +1704,78 @@ h6 {
 }
 
 .ielts-table-courses-item1 {
-    width: 70px;
+    width: 20%;
 }
 
 .ielts-table-courses-item2 {
-    width: 100px;
+    width: 33%;
 }
 
-.ielts-table-courses-item345 {
-    width: 50px;
+.ielts-table-courses-item3 {
+    width: 17%;
 }
 
-.ielts-table-courses-subrow {
+.ielts-table-courses-item4 {
+    width: 18%;
+}
+
+.ielts-table-courses-item5 {
+    width: 12%;
+}
+
+.free-test, .free-test-content,  .free-test-item {
     display: flex;
     display: -webkit-flex;
     
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    
+}
+
+.free-test-content {
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    width: 550px;
+}
+
+.free-test {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.free-test-item {
+
     flex-direction: column;
     -webkit-flex-direction: column;
     
-    justify-content: space-around;
-}
-
-/*.ielts-table-courses-subrow-top, .ielts-table-courses-subrow-bottom {
-    height: 50px;
+    align-items: center;
+    -webkit-align-items: center;
+    
+    padding: 0 10px 30px 10px;
+    
     text-align: center;
 
-}*/
-
-.ielts-table-courses-subrow-border {
-    
-    border-top: solid 1px #ddd; 
 }
 
+.free-test-title {
+    color: red;
+    padding: 50px 0;
+    font-size: 1.5em;
+}
 
+.free-test-small {
+    font-size: 0.85em;
+}
+
+.orange-circle {
+    background-color: #f9c543;
+    width: 80px;
+    height: 80px;
+    border-radius: 99em;
+    padding: 28px 10px;;
+    font-size: 2em;
+    color: white;
+}
 
 
 @media (max-width: 850px) {
@@ -1778,6 +1823,22 @@ h6 {
     
     .ielts-table-basic-content, .ielts-table-compare-content {
         width: 150px;
+    }
+    
+    .ielts-table-courses-item1 {
+        width: 130px;
+    }
+
+    .ielts-table-courses-item2 {
+        width: 220px;
+    }
+
+    .ielts-table-courses-item3, .ielts-table-courses-item4 {
+        width: 120px;
+    }
+
+    .ielts-table-courses-item5 {
+        width: 70px;
     }
 
 }
