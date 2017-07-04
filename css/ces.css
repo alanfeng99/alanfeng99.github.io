@@ -1926,3 +1926,10 @@ h6 {
     }
 
 }
+.book_detail {
+    margin-bottom:15px;
+}
+
+.book_content {
+    padding: 15px;
+}
