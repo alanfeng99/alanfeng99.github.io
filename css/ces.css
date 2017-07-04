@@ -717,6 +717,12 @@ h6 {
 	height:635px;
 }
 
+.ielts-report-banner{
+	background:url(../images/banner_ielts_report.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;
+}
+
 .courses-banner{
 	background:url(../images/inner-banner.jpg) no-repeat	
 }
@@ -1777,6 +1783,24 @@ h6 {
     color: white;
 }
 
+.ielts-report-padding {
+    padding-bottom: 30px;
+}
+
+.ielts-table-report-item {
+    width: 20%;
+}
+
+.icon-lg {
+    font-size: 5em;
+    color: #f9c543;
+}
+
+.under-line {
+    text-decoration: underline;
+}
+
+
 
 @media (max-width: 850px) {
     .flex-stretch-768 {
@@ -1840,6 +1864,10 @@ h6 {
     .ielts-table-courses-item5 {
         width: 70px;
     }
+    
+    .ielts-table-report-item {
+        width: 140px;
+    }
 
 }
 
@@ -1856,6 +1884,10 @@ h6 {
     }
     
     .ielts-test-item {
+        width: 100%;
+    }
+    
+    .width100-520px {
         width: 100%;
     }
 }
