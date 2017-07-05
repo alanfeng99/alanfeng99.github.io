@@ -729,6 +729,12 @@ h6 {
 	height:635px;
 }
 
+.summer-intensive-banner{
+	background:url(../images/banner/201605CES-Web-Banner-Summer-01.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;
+}
+
 .courses-banner{
 	background:url(../images/inner-banner.jpg) no-repeat	
 }
