@@ -723,6 +723,12 @@ h6 {
 	height:635px;
 }
 
+.ielts-faqs-banner{
+	background:url(../images/banner_ielts_faqs.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;
+}
+
 .courses-banner{
 	background:url(../images/inner-banner.jpg) no-repeat	
 }
@@ -1799,6 +1805,33 @@ h6 {
 .under-line {
     text-decoration: underline;
 }
+
+.faq-q {
+    color: #f9c543;
+    padding-right: 5px;
+}
+
+.faq-a {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    
+}
+
+.orange-circle-faq {
+    background-color: #f9c543;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 99em;
+    text-align: center;
+    padding-top: 2px;
+    margin-right: 15px;
+    color: white;
+}
+
+.panel-title>a { /*remove Q underline*/
+    text-decoration: none;
+}
+
 
 
 
