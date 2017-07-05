@@ -735,6 +735,12 @@ h6 {
 	height:635px;
 }
 
+.toefl-intro-banner{
+	background:url(../images/banner_toefl_intro.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;    
+}
+
 .courses-banner{
 	background:url(../images/inner-banner.jpg) no-repeat	
 }
@@ -1606,6 +1612,10 @@ h6 {
 .ielts-test-content {
     padding: 15px;
     flex-grow: 1;
+}
+
+.ielts-test-content ul {
+    margin-bottom: 0;
 }
 
 .ielts-level {
