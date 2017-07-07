@@ -48,7 +48,24 @@
             $("#date").datepicker();
         })();
     </script>
+    <script>
+        function showme(a) {
+            for (var i = 1; i <= 9; i++) {
 
+                $('#book' + i).css({
+                    display: 'none'
+                });
+
+                $('#book' + a).css({
+                    display: 'block'
+                });
+
+                $(".elastislide-list li").removeClass("book_thumbnail");
+                $("#bs" + a).addClass("book_thumbnail");
+            }
+
+        }
+    </script>
     <style>
         * {
             background-repeat: no-repeat;
@@ -63,7 +80,7 @@
             height: 635px;
         }
         
-        .book_tumbnail {
+        .book_thumbnail {
             border-bottom: 6px solid #f3bb03;
         }
         
@@ -216,34 +233,32 @@
             <div class="fixed-bar">
                 <!-- Elastislide Carousel -->
                 <ul id="carousel" class="elastislide-list" style="top:0px;max-height: 200px;">
-                    <li>
-                        <div class="book_tumbnail">
-                            <a href="#"><img src="images/temp/book1_s.jpg" alt="image01" /></a>
-                        </div>
+                    <li id="bs1" class="book_thumbnail">
+                        <a href="javascript: void(0)" onclick="showme('1')"><img src="images/temp/book1_s.jpg" alt="image01" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book2_s.jpg" alt="image02" /></a>
+                    <li id="bs2">
+                        <a href="javascript: void(0)" onclick="showme('2')"><img src="images/temp/book2_s.jpg" alt="image02" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book3_s.jpg" alt="image03" /></a>
+                    <li id="bs3">
+                        <a href="javascript:;" onclick="showme('3')"><img src="images/temp/book3_s.jpg" alt="image03" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book4_s.jpg" alt="image04" /></a>
+                    <li id="bs4">
+                        <a href="javascript:;" onclick="showme('4')"><img src="images/temp/book4_s.jpg" alt="image04" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book5_s.jpg" alt="image05" /></a>
+                    <li id="bs5">
+                        <a href="javascript:;" onclick="showme('5')"><img src="images/temp/book5_s.jpg" alt="image05" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book6_s.jpg" alt="image06" /></a>
+                    <li id="bs6">
+                        <a href="javascript:;" onclick="showme('6')"><img src="images/temp/book6_s.jpg" alt="image06" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book7_s.jpg" alt="image07" /></a>
+                    <li id="bs7">
+                        <a href="javascript:;" onclick="showme('7')"><img src="images/temp/book7_s.jpg" alt="image07" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book8_s.jpg" alt="image08" /></a>
+                    <li id="bs8">
+                        <a href="javascript:;" onclick="showme('8')"><img src="images/temp/book8_s.jpg" alt="image08" /></a>
                     </li>
-                    <li>
-                        <a href="#"><img src="images/temp/book9_s.jpg" alt="image09" /></a>
+                    <li id="bs9">
+                        <a href="javascript:;" onclick="showme('9')"><img src="images/temp/book9_s.jpg" alt="image09" /></a>
                     </li>
 
                 </ul>
@@ -288,6 +303,138 @@
                     <br> 建議售價: NT$540
                 </div>
                 <div class="info col-sm-2"></div>
+            </div>
+
+            <div id="book3" class="book_detail row" style="display:none">
+                <div class="col-sm-2"></div>
+                <div class="cover col-sm-2 text-center">
+                    <span class="frame"></span>
+                    <img src="images/temp/book3.jpg" alt="IELTS Express – Upper Intermediate" />
+                </div>
+                <div class="info col-sm-6" style="margin:20px">
+                    <h2>IELTS Express – Upper Intermediate</h2>
+                    <div class="author"><strong>作者</strong>Pamela Humphreys<strong>出版社</strong>Thomson</div>
+                    本書適合IELTS程度5.5-7分的同學進修使用，完整指導聽、說、讀、寫的題型與技巧。有文法單元加強寫作與口說能力，也有常用字彙，讓您學習事半功倍，練習題部分也附上詳解，讓您完整掌握答題原則!
+                    <br />
+                    <br /> 建議售價NT$560
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div id="book4" class="book_detail" style="display:none">
+                <div class="col-sm-2"></div>
+                <div class="cover  col-sm-2 text-center">
+                    <span class="frame"></span>
+                    <img src="images/temp/book4.jpg" alt="IELTS Foundation (Student’s Book)" />
+                </div>
+                <div class="info col-sm-6" style="margin:20px">
+                    <h2>IELTS Foundation (Student’s Book)</h2>
+                    <div class="author"><strong>作者</strong>Rachael Roberts, Joanne Gakonga and Andrew Preshous<strong>出版社</strong>Macmillan</div>
+                    全冊共12個單元，書中根據IELTS測驗的主題特色－人文、社會、科學等，提供生活化又新奇有趣的報章雜誌文章和口說活動探討，如：史上第一位太空渡假遊客、軟體將你的生活放進磁碟中、廣告藝術，甚至以「IELTS準備」為末單元的主題，讓學生討論出國唸書的問題、考試辛苦談，以及近年東亞學生赴英求學的問題。 寫作教學針對圖表分析與主題寫作，皆提供範文及句型歸類或字彙教學，幫助學生快速掌握IELTS寫作測驗靈活的作文考題。
+                    <br />
+                    <br /> 單元中各部分皆以IELTS全真試題，給予學生最直接、最真實的IELTS聽說讀寫、發音、字彙與文法訓練。書末含單元文法與字彙的練習頁、寫作範本以及聽力錄音稿，方便自修學習。
+
+                    <br />
+                    <br /> 建議售價NT$590
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div id="book5" class="book_detail" style="display:none">
+                <div class="col-sm-2"></div>
+                <div class="cover col-sm-2 text-center">
+                    <span class="frame"></span>
+                    <img src="images/temp/book5.jpg" alt="IELTS Foundation(Study Skills)" />
+                </div>
+                <div class="info col-sm-6" style="margin:20px">
+                    <h2>IELTS Foundation (Study Skills)</h2>
+                    <div class="author"><strong>作者</strong>Rachael Roberts, Joanne Gakonga and Andrew Preshous<strong>出版社</strong>Macmillan</div>
+                    本書提供聽、說、讀、寫四部份個別的題庫練習及一份全真模擬試題，是IELTS考生必備的考前衝刺書。
+                    <br />
+                    <br /> 建議售價NT$680
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div id="book6" class="book_detail" style="display:none">
+                <div class="col-sm-2"></div>
+                <div class="cover col-sm-2 text-center">
+                    <span class="frame"></span>
+                    <img src="images/temp/book6.jpg" alt="STEP UP TO IELTS – Student’s Book" />
+                </div>
+                <div class="info col-sm-6" style="margin:20px">
+                    <h2>STEP UP TO IELTS – Student’s Book</h2>
+                    <div class="author"><strong>作者</strong>Jakeman<strong>出版社</strong>Cambridge</div>
+                    Cambridge Step Up to IELTS是一套依步驟拆解的方式，一步步指導學生解題的IELTS考試用書。單元編排明確，針對聽、說、讀、寫各類題型提供大量的習題，幫助學生掌握IELTS考試的各種狀況。針對目標分數為Band 5-6的學生需求在最短時間內將IELTS 考試題型做詳盡解析。活潑實用的單元主題，對即將面對未來的國外生活考生們絕對是最佳的學習教材。全書共16個單元，每單元平均以兩頁的方式，分別針對IELTS聽、說、讀、寫的考題類型，漸進且詳細地指導考試技巧。
+                    <br />
+                    <br /> 建議售價NT$540
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div id="book7" class="book_detail" style="display:none">
+                <div class="col-sm-2"></div>
+                <div class="cover col-sm-2 text-center">
+                    <span class="frame"></span>
+                    <img src="images/temp/book7.jpg" alt="Objective IELTS – Intermediate(Student’s book with CD-ROM)" />
+                </div>
+                <div class="info col-sm-6" style="margin:20px">
+                    <h2>Objective IELTS – Intermediate(Student’s book with CD-ROM)</h2>
+                    <div class="author"><strong>作者</strong>Black<strong>出版社</strong>Cambridge</div>
+                    本書適合目標分數為Band6.5-7的同學使用。內容由12個單元組成，系統化整理聽、說、讀、寫、發音等考試練習。
+                    <br />
+                    <br /> 針對IELTS考試所編寫的考試準備用書，可密集訓練學生聽說讀寫四項語言能力，並增進學術研究與IELTS考試所要求之分析評論技巧，確實提升IELTS考試實戰能力。
+
+                    <br />
+                    <br /> 常見例句及常見語法錯誤都由Cambridge語料庫集截收錄。是熟悉IELTS題型最好的工具書。
+                    <br />
+                    <br /> 建議售價NT$980
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div id="book8" class="book_detail" style="display:none">
+                <div class="col-sm-2"></div>
+                <div class="cover col-sm-2 text-center">
+                    <span class="frame"></span>
+                    <img src="images/temp/book8.jpg" alt="Objective IELTS Advanced Student's Book with CD-ROM" />
+                </div>
+                <div class="info col-sm-6" style="margin:20px">
+                    <h2>Objective IELTS Advanced Student's Book with CD-ROM</h2>
+                    <div class="author"><strong>作者</strong>Capel<strong>出版社</strong></div>
+                    本書適合目標分數為Band6.5-7的同學使用。內容由12個單元組成，系統化整理聽、說、讀、寫、發音等考試練習。
+                    <br />
+                    <br /> 針對IELTS考試所編寫的考試準備用書，可密集訓練學生聽說讀寫四項語言能力，並增進學術研究與IELTS考試所要求之分析評論技巧，確實提升IELTS考試實戰能力。 常見例句及常見語法錯誤都由Cambridge語料庫集截收錄。是熟悉IELTS題型最好的工具書。
+
+                    <br />
+                    <br /> 建議售價NT$980
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div id="book9" class="book_detail" style="display:none">
+                <div class="col-sm-2"></div>
+                <div class="cover col-sm-2 text-center">
+                    <span class="frame"></span>
+                    <img src="images/temp/book9.jpg" alt="IELTS　Masterclass" />
+                </div>
+                <div class="info col-sm-6" style="margin:20px">
+                    <h2>IELTS　Masterclass</h2>
+                    <div class="author"><strong>作者</strong>Simon Haines, Peter May<strong>出版社</strong>Oxford University Press</div>
+                    IELTS Masterclass是一本針對學術領域或研究所課程的學生所編寫的IELTS考試用書。課程內容完全依據IELTS的出題方向與題型所設計，可大幅提升英語能力，與IELTS測驗實戰能力，突破考試瓶頸。
+                    <br />
+                    <br /> 全書共14個單元，每單元針對聽、說、讀、寫四部份，分別深入指導。 單元主題皆為IELTS測驗常見主題，例如：文化差異、藝術、商業議題、教育、科學、科技與傳播、大自然、心理學、歷史與建築、語言、工程與創新。 另外，還提供您不可不知的20項IELTS考試成功須知。
+
+                    <br />
+                    <br /> 建議售價NT$930
+                </div>
+                <div class="col-sm-2"></div>
             </div>
         </div>
     </div>
