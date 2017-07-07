@@ -94,6 +94,10 @@ h6 {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+   
+.padding-top-12 {
+	padding-top: 12px;
+}
 .btn-default, .btn-default:hover, .btn-default:focus {
 	background: #f9c543;
 	background-color: #f9c543;
@@ -737,6 +741,12 @@ h6 {
 
 .toefl-intro-banner{
 	background:url(../images/banner_toefl_intro.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;    
+}
+
+.toefl-courses-banner{
+	background:url(../images/banner_toefl_courses.jpg) no-repeat bottom;
     background-size: cover;
 	height:635px;    
 }
@@ -1568,7 +1578,7 @@ h6 {
     text-align: center;
 }
 
-.ielts-test {
+.intro-test {
     display: flex;
     display: -webkit-flex;
     
@@ -1577,7 +1587,7 @@ h6 {
     margin-bottom: 5px;
 }
 
-.ielts-test-item {
+.intro-test-item {
     background-color: black;
     
     display: flex;
@@ -1596,11 +1606,11 @@ h6 {
     
 }
 
-.ielts-test-icon {
+.intro-test-icon {
     width: 40px;
 }
 
-.ielts-test-title {
+.intro-test-title {
     color: white;
     font-size: 800;
 }
@@ -1609,12 +1619,12 @@ h6 {
     font-style: italic;
 }
 
-.ielts-test-content {
+.intro-test-content {
     padding: 15px;
     flex-grow: 1;
 }
 
-.ielts-test-content ul {
+.intro-test-content ul {
     margin-bottom: 0;
 }
 
@@ -1711,7 +1721,7 @@ h6 {
 .table-responsive>.table>tbody>tr>td, .table-responsive>.table>thead>tr>th {
 	vertical-align: top;
 	white-space: normal;
-	font-size: 0.9em;
+	/*font-size: 0.9em;*/
 }
 
 .table-highlight-title {
@@ -1789,6 +1799,7 @@ h6 {
     color: red;
     padding: 50px 0;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .free-test-small {
@@ -1848,6 +1859,9 @@ h6 {
     text-decoration: none;
 }
 
+.toefl-table-courses-item {
+    width: 20%;
+}
 
 
 
@@ -1859,6 +1873,41 @@ h6 {
     
     .flex-space-between {
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ielts-table-basic-content, .ielts-table-compare-content {
+        width: 180px;
+    }
+    
+        
+    .ielts-table-courses-item1 {
+        width: 140px;
+    }
+
+    .ielts-table-courses-item2 {
+        width: 250px;
+    }
+
+    .ielts-table-courses-item3 {
+        width: 120px;
+    }
+    
+    .ielts-table-courses-item4 {
+        width: 130px;
+    }
+
+    .ielts-table-courses-item5 {
+        width: 80px;
+    }
+    
+    .ielts-table-report-item {
+        width: 140px;
+    }
+    
+    .toefl-table-courses-item {
+        width: 150px;
     }
 }
 
@@ -1886,37 +1935,9 @@ h6 {
         -webkit-flex-direction: column;
     }
     
-    .ielts-table-basic, .ielts-table-compare {
+    /*.table {
         font-size: 0.9em;
-    }
-    
-    .ielts-table-basic-item, .ielts-table-compare-item {
-	   width: 65px;
-    }
-    
-    .ielts-table-basic-content, .ielts-table-compare-content {
-        width: 150px;
-    }
-    
-    .ielts-table-courses-item1 {
-        width: 130px;
-    }
-
-    .ielts-table-courses-item2 {
-        width: 220px;
-    }
-
-    .ielts-table-courses-item3, .ielts-table-courses-item4 {
-        width: 120px;
-    }
-
-    .ielts-table-courses-item5 {
-        width: 70px;
-    }
-    
-    .ielts-table-report-item {
-        width: 140px;
-    }
+    }*/
 
 }
 
@@ -1927,12 +1948,12 @@ h6 {
         -webkit-flex-direction: column;
     }
     
-    .ielts-test {
+    .intro-test {
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
     }
     
-    .ielts-test-item {
+    .intro-test-item {
         width: 100%;
     }
     
