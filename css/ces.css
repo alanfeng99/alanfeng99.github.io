@@ -261,7 +261,7 @@ h6 {
 }
 .nav>li.nav-last a, .nav>li.nav-last a:hover {
 	margin: 0;
-	padding: 0 20px;
+	padding: 0 10px;/*0 20px;*/
 	border-bottom: solid 4px #f6c344;
 	background: #f6c344;
 	color: #1e1a10
@@ -749,6 +749,12 @@ h6 {
 	background:url(../images/banner_toefl_courses.jpg) no-repeat bottom;
     background-size: cover;
 	height:635px;    
+}
+
+.reservation-banner {
+    background: url(../images/banner_reservatoin.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 635px;
 }
 
 .courses-banner{
