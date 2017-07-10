@@ -1839,6 +1839,10 @@ h6 {
     text-decoration: underline;
 }
 
+.text-align-left {
+    text-align: left;
+}
+
 .faq-q {
     color: #f9c543;
     padding-right: 5px;
@@ -1867,6 +1871,10 @@ h6 {
 
 .toefl-table-courses-item {
     width: 20%;
+}
+
+.bg-yellow {
+    background-color: #f9c543;
 }
 
 
