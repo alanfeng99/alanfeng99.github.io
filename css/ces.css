@@ -2017,3 +2017,7 @@ h6 {
 .book_content {
     padding: 15px;
 }
+
+.teacher_fancybox {
+    display: none;max-width:650px;
+}
