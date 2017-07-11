@@ -751,10 +751,88 @@ h6 {
 	height:635px;    
 }
 
+.ces-seminar-banner {
+	background:url(../images/banner_ces-seminar.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;
+}
+
+.ces-Pre-sessional-banner {
+	background:url(../images/banner_ces-Pre-sessional.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;
+}
+
+.toefl-experience-banner {
+	background:url(../images/banner_toefl-experience.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;     
+}
+
+.toefl-seminar-banner {
+	background:url(../images/banner_toefl-seminar.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;     
+}
+
+.resources_teachers-banner {
+	background:url(../images/banner_resources_teachers.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;     
+}
+
+.resources_textbook-banner {
+	background:url(../images/banner_resources_textbook.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;     
+}
+
+.testimonials-banner {
+	background:url(../images/banner_testimonials.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;     
+}
+
+.contact-banner {
+	background:url(../images/banner_contact.jpg) no-repeat bottom;
+    background-size: cover;
+	height:635px;     
+}
+
 .reservation-banner {
     background: url(../images/banner_reservatoin.jpg) no-repeat bottom;
     background-size: cover;
     height: 635px;
+}
+
+.news_news-banner {
+    background: url(../images/banner_news_news.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 635px;
+}
+
+.news_photos-banner {
+    background: url(../images/banner_news_photos.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 635px;
+}
+
+.news_blog-banner {
+    background: url(../images/banner_news_blog.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 635px;
+}
+
+.reservation_chat_room-banner {
+    background: url(../images/banner_reservation_chat_room.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 635px;    
+}
+
+.reservation_exam-banner {
+    background: url(../images/banner_reservation_exam.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 635px;    
 }
 
 .courses-banner{
@@ -1875,6 +1953,26 @@ h6 {
 
 .bg-yellow {
     background-color: #f9c543;
+}
+
+.contact_us {
+    display: flex;
+    display: -webkit- flex;
+    
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.contact_us-item {
+    flex-grow: 1;
+    width: 150px;
+}
+
+.ico-width-70 {
+    width: 70px;
 }
 
 

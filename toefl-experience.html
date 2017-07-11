@@ -207,7 +207,7 @@
 
 
 
-    <div class="banner reservation-banner clearfix">
+    <div class="banner toefl-experience-banner clearfix">
 
         <div class="container">
             <div class="banner-content inner-banner-content">
@@ -232,7 +232,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-center text-center">
-                    <h1>雅思體驗課程</h1>
+                    <h1>托福體驗課程</h1>
                 </div>
                 <div class="col-md-9 col-center">
                     你可能聽過，有些學生托福考了高分，到美國時卻連海關人員的問話都無法回答。也或許看過，一間大教室內超過40位同學盯著螢幕抄筆記，很會解題，但卻不一定看懂試題。<br><br>
@@ -445,7 +445,7 @@
                         <ul>
                             <li><a href="about_ces.html">關於CES</a></li>
                             <li><a href="ielts_courses.html">IELTS課程</a></li>
-                            <li><a href="ielts_faqs.html">IELTS考試報名</a></li>
+                            <li><a href="ielts_faqs.html">IELTS考試</a></li>
                             <li><a href="ielts_report.html">IELTS報名</a></li>
                             <li><a href="resources_teachers.html">教師及顧問團隊</a></li>
                             <li><a href="news_news.html">最新消息</a></li>
@@ -492,15 +492,23 @@
                             <textarea class="form-control form-control-comments" id="" rows="3" onfocus="if(this.value==this.defaultValue) (this.value='')" onblur="if(this.value=='') (this.value=this.defaultValue)" placeholder="備註"></textarea>
                         </div>
 
-                        <!-- Large modal -->
-                        <div>
-                            <a data-toggle="modal" data-target=".bs-example-modal-lg">個資宣告</a>
-
-                            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        個資宣告：
-                                        <br> 我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
+                        <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal" class="under-line">
+                            <strong>個資宣告</strong>
+                        </a>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">個資宣告</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
+                                    </div>
+                                    <div class="modal-footer">
                                     </div>
                                 </div>
                             </div>

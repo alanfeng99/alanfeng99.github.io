@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>準備ielts, 如何準備ielts考試, ielts 課程, ielts 報名</title>
+    <title>線上預約英文分級測試-CES英語學習中心-專精IELTS準備課程</title>
     <link rel="stylesheet" href="css/animations.css" type="text/css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -102,12 +102,12 @@
             background-image: url(./images/ico_reservatoin_exam.png);
         }
         
-        * {
+        /* * {
             background-repeat: no-repeat;
             margin: 0;
             font-size: 12px;
             font-family: Arial;
-        }
+        }*/
         
         .reservation-banner {
             background: url(./images/banner_chatroom.jpg) no-repeat bottom;
@@ -129,9 +129,6 @@
         <div class="col-xs-8 zoom-479 mob-zoom-339">
             <ul class="anc-nav">
                 <span class="callus">CALL US </span><a href="tel:0227783100">02 2778 3100</a>
-                <!--<li><a class="login" href="#"><img src="images/lock-top.png"  alt=""/>Login</a></li>
-                <li><a class="help" href="#"><img src="images/help-top.png"  alt=""/>Help</a></li>
-                <li><a class="search" href="#"><img src="images/search-top.png"  alt=""/>Search</a></li>-->
             </ul>
         </div>
     </div>
@@ -172,13 +169,6 @@
                         </ul>
                     </li>
 
-                    <!-- <li><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">線上預約<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">線上預約英文分級測試</a></li>
-                        <li><a href="#">加入English Chat Room</a></li>
-                    </ul>
-                </li>-->
-
                     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">免費講座<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="ces-seminar.html">雅思體驗課程</a></li>
@@ -217,7 +207,7 @@
 
 
 
-    <div class="banner reservation-banner clearfix">
+    <div class="banner reservation_chat_room-banner clearfix">
 
         <div class="container">
             <div class="banner-content inner-banner-content">
@@ -322,10 +312,19 @@
 
                 <div class="info col-xs-12 col-sm-5 col-lg-3 padding-top-bottom-30">
                     <h3>免費參加English Chat Room</h3>
-                    <div class="text">
+                    <div class="contact_us">
+                        <div class="ico-width-70">
+                            <img class="imgWidth100" src="images/ico_reservatoin_exam.png">
+                        </div>
+                        <div class="contact_us-item">
+                            加強你的口語表達能力!<br>
+                            CES不定期舉辦English Chat Room，由CES教學經驗豐富的外籍老師帶領大家進行對話、討論，每次主題皆不同，讓CES幫助你英文口說更流利、更有自信!如果你有興趣的話，請填寫以下資料，我們會盡快與您確認時段。
+                        </div>
+                    </div>
+                    <!--<div class="text">
                         加強你的口語表達能力!
                         <br>CES不定期舉辦English Chat Room，由CES教學經驗豐富的外籍老師帶領大家進行對話、討論，每次主題皆不同，讓CES幫助你英文口說更流利、更有自信!如果你有興趣的話，請填寫以下資料，我們會盡快與您確認時段。
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
@@ -344,11 +343,11 @@
                         <h6>選單</h6>
                         <ul>
                             <li><a href="about_ces.html">關於CES</a></li>
-                            <li><a href="#">IELTS課程</a></li>
-                            <li><a href="#">IELTS考試報名</a></li>
-                            <li><a href="#">IELTS報名</a></li>
-                            <li><a href="#">教師及顧問團隊</a></li>
-                            <li><a href="#">最新消息</a></li>
+                            <li><a href="ielts_courses.html">IELTS課程</a></li>
+                            <li><a href="ielts_faqs.html">IELTS考試</a></li>
+                            <li><a href="ielts_report.html">IELTS報名</a></li>
+                            <li><a href="resources_teachers.html">教師及顧問團隊</a></li>
+                            <li><a href="news_news.html">最新消息</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-5 links">
@@ -392,15 +391,23 @@
                             <textarea class="form-control form-control-comments" id="" rows="3" onfocus="if(this.value==this.defaultValue) (this.value='')" onblur="if(this.value=='') (this.value=this.defaultValue)" placeholder="備註"></textarea>
                         </div>
 
-                        <!-- Large modal -->
-                        <div>
-                            <a data-toggle="modal" data-target=".bs-example-modal-lg">個資宣告</a>
-
-                            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        個資宣告：
-                                        <br> 我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
+                         <!-- Button trigger modal -->
+                        <a data-toggle="modal" data-target="#myModal" class="under-line">
+                            <strong>個資宣告</strong>
+                        </a>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">個資宣告</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
+                                    </div>
+                                    <div class="modal-footer">
                                     </div>
                                 </div>
                             </div>
