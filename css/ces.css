@@ -2119,3 +2119,7 @@ h6 {
 .teacher_fancybox {
     display: none;max-width:650px;
 }
+
+.new_photos {
+    margin-bottom: 10px;
+}
