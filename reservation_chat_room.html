@@ -51,7 +51,7 @@
     </script>
 
     <style>
-        #reservatoin .form th {
+        /*#reservatoin .form th {
             font-size: 14px;
             font-family: '微軟正黑體';
             text-align: right;
@@ -96,24 +96,24 @@
             border-bottom: 3px solid #fec601;
             padding-bottom: 10px;
             margin-bottom: 10px;
-        }
+        }*/
         
         .text {
             background-image: url(./images/ico_reservatoin_exam.png);
         }
         
-        /* * {
+        /** {
             background-repeat: no-repeat;
             margin: 0;
             font-size: 12px;
             font-family: Arial;
         }*/
         
-        .reservation-banner {
+        /*.reservation-banner {
             background: url(./images/banner_chatroom.jpg) no-repeat bottom;
             background-size: cover;
             height: 635px;
-        }
+        }*/
     </style>
 </head>
 
@@ -237,10 +237,134 @@
     </div>
 
     <!-- Form Start -->
-    <div class="grey-inner">
+    <!-- <div class="grey-inner">-->
         <div class="container">
-            <div class="row" id="reservatoin">
-                <div class="form col-xs-12 col-sm-7 col-lg-9 padding-top-bottom-30">
+            <div class="row"><!-- id="reservatoin">-->
+                <div class="col-sm-4 col-sm-push-8 padding-bottom-30 contact-info">
+                    <div class="contact_us grey-inner">
+                        <div class="ico-width-70">
+                            <img class="imgWidth100" src="images/ico_reservatoin_exam.png">
+                        </div>
+                        <div class="contact_us-item">
+                            加強你的口語表達能力!<br>
+                            CES不定期舉辦English Chat Room，由CES教學經驗豐富的外籍老師帶領大家進行對話、討論，每次主題皆不同，讓CES幫助你英文口說更流利、更有自信!如果你有興趣的話，請填寫以下資料，我們會盡快與您確認時段。
+                        </div>
+                    </div>
+                    <!--<div class="text">
+                        加強你的口語表達能力!
+                        <br>CES不定期舉辦English Chat Room，由CES教學經驗豐富的外籍老師帶領大家進行對話、討論，每次主題皆不同，讓CES幫助你英文口說更流利、更有自信!如果你有興趣的話，請填寫以下資料，我們會盡快與您確認時段。
+                    </div>-->
+                </div>
+                
+                <div class="col-sm-8 col-sm-pull-4 padding-bottom-30">
+                    電話與email請至少選擇一項填寫，CES會在收到您的線上預約之後，盡速與您聯繫確認，謝謝。
+                    <form class="form-horizontal padding-top-12" role="form">
+                        <div class="form-group">
+                            <label for="c_name" class="col-sm-3 control-label">中文姓名</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="c_name" name="c_name" placeholder="輸入中文姓名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">CES學員</label>
+                            <div class="col-sm-8">
+
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="mem" id="mem1" value="1" checked>
+                                        是
+                                    </label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="mem" id="mem2" value="0">
+                                        否
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tel" class="col-sm-3 control-label">聯絡電話</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="tel" name="tel" placeholder="輸入聯絡電話">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="col-sm-3 control-label">電子信箱</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="輸入電子信箱">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="door" class="col-sm-3 control-label">驗證碼</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="door" name="door" placeholder="輸入驗證碼">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="chk_num.php" id="doorImg">
+                                <input type="hidden" name="do_submit">
+                                <a name="door_i"></a>
+                                <a href="#door_i" onclick="chg_img();return false;" class="btn_refresh">刷新</a>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="memo" class="col-sm-3 control-label">備註</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="memo" name="memo" placeholder="輸入備註" rows="5" cols="45"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-8">
+                                <!-- Button trigger modal -->
+                                <button type="button" data-toggle="modal" data-target="#myModal2" class="bg-colorless">
+                                    <strong class="under-line">個資宣告</strong>
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="myModalLabel2">個資宣告</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-8">                        
+                                <div>
+                                    <label>
+                                        <input type="checkbox">我已詳閱並同意上述內容
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-8">                        
+                                <div>
+                                    <button type="submit" class="btn btn-default" onclick="SS_Submit();return false;">送出預約</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- <div class="form col-xs-12 col-sm-7 col-lg-9 padding-top-bottom-30">
                     <form id="form1" name="form1" method="post" action="?submit=1">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tbody>
@@ -308,29 +432,12 @@
                         </table>
 
                     </form>
-                </div>
-
-                <div class="info col-xs-12 col-sm-5 col-lg-3 padding-top-bottom-30">
-                    <h3>免費參加English Chat Room</h3>
-                    <div class="contact_us">
-                        <div class="ico-width-70">
-                            <img class="imgWidth100" src="images/ico_reservatoin_exam.png">
-                        </div>
-                        <div class="contact_us-item">
-                            加強你的口語表達能力!<br>
-                            CES不定期舉辦English Chat Room，由CES教學經驗豐富的外籍老師帶領大家進行對話、討論，每次主題皆不同，讓CES幫助你英文口說更流利、更有自信!如果你有興趣的話，請填寫以下資料，我們會盡快與您確認時段。
-                        </div>
-                    </div>
-                    <!--<div class="text">
-                        加強你的口語表達能力!
-                        <br>CES不定期舉辦English Chat Room，由CES教學經驗豐富的外籍老師帶領大家進行對話、討論，每次主題皆不同，讓CES幫助你英文口說更流利、更有自信!如果你有興趣的話，請填寫以下資料，我們會盡快與您確認時段。
-                    </div>-->
-                </div>
+                </div>-->
 
             </div>
 
         </div>
-    </div>
+    <!--</div>-->
 
     <!-- Form End -->
     <!-- footer -->
@@ -391,10 +498,10 @@
                             <textarea class="form-control form-control-comments" id="" rows="3" onfocus="if(this.value==this.defaultValue) (this.value='')" onblur="if(this.value=='') (this.value=this.defaultValue)" placeholder="備註"></textarea>
                         </div>
 
-                         <!-- Button trigger modal -->
-                        <a data-toggle="modal" data-target="#myModal" class="under-line">
-                            <strong>個資宣告</strong>
-                        </a>
+                        <!-- Button trigger modal -->
+                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn bg-yellow">
+                            <strong class="under-line">個資宣告</strong>
+                        </button>
                         
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

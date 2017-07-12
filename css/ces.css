@@ -1857,7 +1857,7 @@ h6 {
 .free-test-content {
     justify-content: space-around;
     -webkit-justify-content: space-around;
-    width: 550px;
+    /*width: 550px;*/
 }
 
 .free-test {
@@ -1873,7 +1873,9 @@ h6 {
     align-items: center;
     -webkit-align-items: center;
     
-    padding: 0 10px 30px 10px;
+    width: 170px;
+    
+    padding-bottom: 30px;
     
     text-align: center;
 
@@ -1955,6 +1957,11 @@ h6 {
     background-color: #f9c543;
 }
 
+.bg-colorless {
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+
 .contact_us {
     display: flex;
     display: -webkit- flex;
@@ -1973,6 +1980,13 @@ h6 {
 
 .ico-width-70 {
     width: 70px;
+}
+
+.dropdown-menu-correct {
+    background-image: none;
+    background-color: white;
+    width: auto;
+    color: black;
 }
 
 
