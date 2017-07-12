@@ -2319,8 +2319,12 @@ a.btn_dark:hover span {
 }
 
 .news_content .pager {
+    /*
     width: 620px;
-    float: left;
+float: left;
+*/
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .pager {
@@ -2373,7 +2377,7 @@ a.btn_dark:hover span {
     float: left;
     width: 35px;
     margin-right: 10px;
-    height: 100px;
+    /*    height: 100px;*/
 }
 
 .news_list li em {

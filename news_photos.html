@@ -291,15 +291,13 @@
         </div>
 
         <div class="pager row">
+            <div class="col-xs-6">
+                <a href="?nowpage=1" title="第1頁" onclick="pagenow(1);return false;" onkeypress="pagenow(1);return false;">上一頁</a>
+            </div>
+            <div class="col-xs-6">
+                <a href="?nowpage=3" title="第3頁" onclick="pagenow(3);return false;" onkeypress="pagenow(3);return false;">下一頁</a>
+            </div>
             <input type="hidden" name="nowpage" value="1">
-            <table width="90%" border="0" cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td width="10%" align="center" class=""><a href="?nowpage=1" title="第1頁" onclick="pagenow(1);return false;" onkeypress="pagenow(1);return false;">上一頁</a></td>
-                        <td width="10%" align="center" class=""><a href="?nowpage=3" title="第3頁" onclick="pagenow(3);return false;" onkeypress="pagenow(3);return false;">下一頁</a></td>
-                    </tr>
-                </tbody>
-            </table>
             <script language="JavaScript" type="text/javascript">
                 function pagenow(a) {
                     document.s_news.nowpage.value = a;
