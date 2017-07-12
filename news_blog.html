@@ -52,72 +52,9 @@
     </script>
 
     <style>
-        /*#reservatoin .form th {
-            font-size: 14px;
-            font-family: '微軟正黑體';
-            text-align: right;
-            padding-right: 10px;
-            color: #000;
-            vertical-align: top;
-            line-height: 35px;
-            width: 80px;
+        ul .row {
+            margin-left: 0px;
         }
-        
-        #reservatoin .form td {
-            padding: 5px 5px 0 5px;
-        }
-        
-        #reservatoin .form input[type=text],
-        #reservatoin .form textarea {
-            width: 100%;
-            border-top: 1px solid #d0d0ca;
-            border-left: 1px solid #d0d0ca;
-            border-right: 1px solid #d0d0ca;
-            border-bottom: 1px solid #fff;
-            background-color: #eee;
-            padding: 5px 0;
-            text-indent: 5px;
-            border-radius: 2px;
-            margin-bottom: 3px;
-        }
-        
-        #reservatoin .form textarea {
-            height: 100px;
-            resize: none;
-        }
-        
-        #reservatoin .info .text,
-        #contact .info .text {
-            background-position: top left;
-            padding-left: 85px;
-        }
-        
-        #reservatoin .info h3 {
-            font-size: 15px;
-            border-bottom: 3px solid #fec601;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-        
-        .text {
-            background-image: url(../images/ico_reservatoin_exam.png);
-        }
-        
-        * {
-            background-repeat: no-repeat;
-            margin: 0;
-            font-size: 12px;
-            font-family: Arial;
-        }
-        
-        .btn_dark {
-            text-decoration: none;
-            background-image: url(../images/btn_dark_r.png);
-            display: block;
-            color: #FFF;
-            background-position: right top;
-            float: left;
-        }*/
     </style>
 </head>
 
@@ -136,7 +73,7 @@
             </ul>
         </div>
     </div>
-   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="clearfix">
             <div class="navbar-header">
 
@@ -289,7 +226,8 @@ May <em>2017</em></span>
                 </li>
                 <li class="col-xs-12 col-sm-6"><span>12<br>
 Apr <em>2017</em></span>
-                    <strong><a href="news_blog_detail.php?id=292">英美俚語大不同（下）</a></strong> 上一篇為大家整理了一些英式、美式俚語，大家還記得嗎？ 今天CES又整理了幾個，給即將出國遊學的你們參考喔！ ..
+                    <strong><a href="news_blog_detail.php?id=292">英美俚語大不同（下）</a></strong>
+                    <br> 上一篇為大家整理了一些英式、美式俚語，大家還記得嗎？ 今天CES又整理了幾個，給即將出國遊學的你們參考喔！ ..
                 </li>
             </div>
             <div class="row">
@@ -306,18 +244,13 @@ Mar <em>2017</em></span>
             </div>
         </ul>
         <div class="pager row">
+            <div class="col-xs-6">
+                <a href="?nowpage=1" title="第1頁" onclick="pagenow(1);return false;" onkeypress="pagenow(1);return false;">上一頁</a>
+            </div>
+            <div class="col-xs-6">
+                <a href="?nowpage=3" title="第3頁" onclick="pagenow(3);return false;" onkeypress="pagenow(3);return false;">下一頁</a>
+            </div>
             <input type="hidden" name="nowpage" value="1">
-            <table width="90%" border="0" cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td width="10%" align="right" class=""></td>
-                        <td width="10%" align="center" class=""></td>
-                        <td width="40%" align="center"><span style="font-size:12px" class="huang">1</span><a href="?nowpage=2" title="第2頁" onclick="pagenow(2);return false;" onkeypress="pagenow(2);return false;">2</a> <a href="?nowpage=3" title="第3頁" onclick="pagenow(3);return false;" onkeypress="pagenow(3);return false;">3</a> <a href="?nowpage=4" title="第4頁" onclick="pagenow(4);return false;" onkeypress="pagenow(4);return false;">4</a> <a href="?nowpage=5" title="第5頁" onclick="pagenow(5);return false;" onkeypress="pagenow(5);return false;">5</a> </td>
-                        <td width="10%" align="center" class=""><a href="?nowpage=2" title="第2頁" onclick="pagenow(2);return false;" onkeypress="pagenow(2);return false;">下一頁</a></td>
-                        <td width="10%" align="left" class=""> <a href="?nowpage=13" title="第13頁" onclick="pagenow(13);return false;" onkeypress="pagenow(13);return false;">最後頁</a></td>
-                    </tr>
-                </tbody>
-            </table>
             <script language="JavaScript" type="text/javascript">
                 function pagenow(a) {
                     document.s_news.nowpage.value = a;
@@ -390,7 +323,7 @@ Mar <em>2017</em></span>
                         <a data-toggle="modal" data-target="#myModal" class="under-line">
                             <strong>個資宣告</strong>
                         </a>
-                        
+
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -440,7 +373,7 @@ Mar <em>2017</em></span>
     <script src='js/css3-animate-it.js'></script>
     <!-- SMOOTH SCROLLING  -->
     <script src="js/smoothscroll.min.js"></script>
-    
+
     <script src='js/global.js'></script>
 </body>
 
