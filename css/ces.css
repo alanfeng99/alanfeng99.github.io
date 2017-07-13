@@ -31,7 +31,8 @@ img {
 	max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 15px 0;
+    margin: 0;
+	/*margin: 0 0 15px 0;*/
 	font-weight: 400;
 }
 h1 {
@@ -98,6 +99,11 @@ h6 {
 .padding-top-12 {
 	padding-top: 12px;
 }
+
+.padding-bottom-15 {
+    margin-bottom: 15px;
+}
+
 .btn-default, .btn-default:hover, .btn-default:focus {
 	background: #f9c543;
 	background-color: #f9c543;
@@ -1043,7 +1049,7 @@ h6 {
 	
 }
 .courses-table tr td{
-	border:solid 1px #fbe0a6	;
+	border:solid 1px #fbe0a6;
 	width:50%
 }
 .courses-table tr td:first-child{
@@ -1503,6 +1509,7 @@ h6 {
 
 .flex-stretch-Item, .flex-stretch-Item-Test, .flex-stretch-768-Item {
     flex-grow: 1;
+    -webkit-flex-grow: 1;
 }
 
 /*.flex-stretch-Item div {
@@ -1667,6 +1674,7 @@ h6 {
     display: -webkit-flex;
     
     align-content: stretch;
+    -webkit-align-content: stretch;
     
     margin-bottom: 5px;
 }
@@ -1706,6 +1714,7 @@ h6 {
 .intro-test-content {
     padding: 15px;
     flex-grow: 1;
+    -webkit-flex-grow: 1;
 }
 
 .intro-test-content ul {
@@ -1737,6 +1746,7 @@ h6 {
     margin: 2px;
     
     flex-grow: 1;
+    -webkit-flex-grow: 1;
 }
 
 .ielts-level-item-up {
@@ -1975,6 +1985,7 @@ h6 {
 
 .contact_us-item {
     flex-grow: 1;
+    -webkit-flex-grow: 1;
     width: 150px;
 }
 
@@ -1987,6 +1998,19 @@ h6 {
     background-color: white;
     width: auto;
     color: black;
+}
+
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.form-horizontal .checkbox, .form-horizontal .checkbox-inline, .form-horizontal .radio, .form-horizontal .radio-inline {
+    margin-right: 10px;
+}
+
+.btn {
+    margin-bottom: 3px;
 }
 
 
