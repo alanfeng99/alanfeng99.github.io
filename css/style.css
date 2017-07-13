@@ -31,8 +31,8 @@ h6 {
 * {
     background-repeat: no-repeat;
     margin: 0;
-    font-size: 12px;
-    font-family: Arial;
+    /*font-size: 12px;
+    font-family: Arial;*/
 }
 
 body {
