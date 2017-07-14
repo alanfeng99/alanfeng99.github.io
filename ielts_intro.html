@@ -371,10 +371,11 @@
                                 <textarea class="form-control form-control-comments" id=""  rows="3" onfocus="if(this.value==this.defaultValue) (this.value='')" onblur="if(this.value=='') (this.value=this.defaultValue)" placeholder="備註"></textarea>
                             </div>
 
+                            <div class="form-group">
                             <!-- Button trigger modal -->
-                            <a data-toggle="modal" data-target="#myModal" class="under-line">
-                                <strong>個資宣告</strong>
-                            </a>
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn bg-colorless">
+                                <strong class="under-line">個資宣告</strong>
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -397,6 +398,8 @@
                                     <input type="checkbox">我已詳閱並同意上述內容
                                 </label>
                             </div>
+                        </div>
+                            
                             <div>
                                 <button type="submit" class="btn btn-send ">送出</button>
                             </div>

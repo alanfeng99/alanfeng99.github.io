@@ -570,33 +570,35 @@
                             <textarea class="form-control form-control-comments" id="" rows="3" onfocus="if(this.value==this.defaultValue) (this.value='')" onblur="if(this.value=='') (this.value=this.defaultValue)" placeholder="備註"></textarea>
                         </div>
 
-                        <!-- Button trigger modal -->
-                        <a data-toggle="modal" data-target="#myModal" class="under-line">
-                            <strong>個資宣告</strong>
-                        </a>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">個資宣告</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
-                                    </div>
-                                    <div class="modal-footer">
+                        <div class="form-group">
+                            <!-- Button trigger modal -->
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn bg-colorless">
+                                <strong class="under-line">個資宣告</strong>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">個資宣告</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
+                                        </div>
+                                        <div class="modal-footer">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">我已詳閱並同意上述內容
+                                </label>
+                            </div>
                         </div>
-
-                        <div>
-                            <label>
-                                <input type="checkbox">我已詳閱並同意上述內容
-                            </label>
-                        </div>
+                        
                         <div>
                             <button type="submit" class="btn btn-send ">送出</button>
                         </div>

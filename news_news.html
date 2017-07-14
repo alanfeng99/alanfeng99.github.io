@@ -176,16 +176,16 @@
     <div class="grey-lyte padding-top-bottom-30">
         <div class="container home home-courses grey-lyte">
             
-            <div class="col-xs-12 text-center">
-                <form class="form-inline" role="form">
-                    <div class="form-group">
+            <div class="col-xs-12">
+                <form class="form search-form" role="form">
+                    <div class="width150">
                         <select class="form-control" name="year">
                             <option value="">年份(全部)</option>
                             <option value="2017">2017</option>
                         </select>
                     </div>
                     
-                    <div class="form-group">
+                    <div class="width150">
                         <select class="form-control" name="month">
                             <option value="">月份(全部)</option>
                             <option value="1">01</option>
@@ -202,12 +202,14 @@
                             <option value="12">12</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn bg-yellow" onclick="document.s_news.submit();">篩選</button>
+                    <div>
+                        <button type="submit" class="btn bg-yellow" onclick="document.s_news.submit();">篩選</button>
+                    </div>
                 </form>
             </div>
             
-            <div class="padding-top-bottom-30 flex-stretch-wrap">
-                <div class="col-xs-12 col-sm-6 flex-stretch-Item">
+            <div class="padding-top-bottom-30 flex-stretch-wrap_news">
+                <div class="col-xs-12 flex-stretch-Item_news">
                     <div class="hm-course-pods newsItem_news">
                         <div class="newsItem-Date_news">
                             <h4>
@@ -216,11 +218,13 @@
                                 <span class="newsItem-Year">2017</span>
                             </h4>
                         </div>
-                        <div>同學們~七~八月暑期課表出爐囉! 趕緊來電跟顧問預約諮詢唷!</div>
+                        <div class="newsItem_news-content">
+                            同學們~七~八月暑期課表出爐囉! 趕緊來電跟顧問預約諮詢唷!
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6  flex-stretch-Item">
+                <div class="col-xs-12 flex-stretch-Item_news">
                     <div class="hm-course-pods newsItem_news">
                         <div class="newsItem-Date_news">
                             <h4>
@@ -229,11 +233,13 @@
                                 <span class="newsItem-Year">2017</span>
                             </h4>
                         </div>
-                        <div>優惠快訊 :月底前報名五、六月課程可享學費優惠3000元唷! 報名請洽02-27783100</div>
+                        <div class="newsItem_news-content">
+                            優惠快訊 :月底前報名五、六月課程可享學費優惠3000元唷! 報名請洽02-27783100
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12  flex-stretch-Item">
+                <div class="col-xs-12 flex-stretch-Item_news">
                     <div class="hm-course-pods newsItem_news">
                         <div class="newsItem-Date_news">
                             <h4>
@@ -242,16 +248,82 @@
                                 <span class="newsItem-Year">2017</span>
                             </h4>
                         </div>
-                        <div>6/10 雅思體驗課程開放報名囉! 報名請洽02-27783100</div>
+                        <div class="newsItem_news-content">
+                            6/10 雅思體驗課程開放報名囉! 報名請洽02-27783100
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 flex-stretch-Item_news">
+                    <div class="hm-course-pods newsItem_news">
+                        <div class="newsItem-Date_news">
+                            <h4>
+                                15<br>
+                                May<br>
+                                <span class="newsItem-Year">2017</span>
+                            </h4>
+                        </div>
+                        <div class="newsItem_news-content">
+                            同學們~~五、六月份課表出爐囉!!! 趕緊來電跟顧問確認最新課程跟優惠呦!!!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 flex-stretch-Item_news">
+                    <div class="hm-course-pods newsItem_news">
+                        <div class="newsItem-Date_news">
+                            <h4>
+                                19<br>
+                                Apr<br>
+                                <span class="newsItem-Year">2017</span>
+                            </h4>
+                        </div>
+                        <div class="newsItem_news-content">
+                            4月優惠快訊:月底前報名課程享有3000元獎助學金! 名額僅限5名 ，報名請洽02-27783100
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 flex-stretch-Item_news">
+                    <div class="hm-course-pods newsItem_news">
+                        <div class="newsItem-Date_news">
+                            <h4>
+                                19<br>
+                                Apr<br>
+                                <span class="newsItem-Year">2017</span>
+                            </h4>
+                        </div>
+                        <div class="newsItem_news-content">
+                            5/6 雅思體驗課程開放報名囉 報名請洽02-27783100
+                        </div>
                     </div>
                 </div>
 
             </div>
+            
+            <nav class="text-center">
+                <ul class="pagination">
+                    <li><a href="?nowpage=1" title="第1頁" onclick="pagenow(1);return false;" onkeypress="pagenow(1);return false;"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="?nowpage=3" title="第3頁" onclick="pagenow(3);return false;" onkeypress="pagenow(3);return false;"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                    
+                </ul>
+            </nav>
+            <input type="hidden" name="nowpage" value="1">
+            <script language="JavaScript" type="text/javascript">
+                function pagenow(a) {
+                    document.s_news.nowpage.value = a;
+                    document.s_news.submit();
+                }
+            </script>
+            
         </div>
     </div>
 
     <!-- Form Start -->
-    <div class="news_content container col-center">
+    <!-- <div class="news_content container col-center">
         <div class="date_filter row">
             <div class="select">
 
@@ -334,7 +406,7 @@ Apr <em>2017</em></span>
                 }
             </script>
         </div>
-    </div>
+    </div>-->
 
     <!-- Form End -->
     <!-- footer -->
@@ -395,33 +467,35 @@ Apr <em>2017</em></span>
                             <textarea class="form-control form-control-comments" id="" rows="3" onfocus="if(this.value==this.defaultValue) (this.value='')" onblur="if(this.value=='') (this.value=this.defaultValue)" placeholder="備註"></textarea>
                         </div>
 
-                        <!-- Button trigger modal -->
-                        <a data-toggle="modal" data-target="#myModal" class="under-line">
-                            <strong>個資宣告</strong>
-                        </a>
+                        <div class="form-group">
+                            <!-- Button trigger modal -->
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn bg-colorless">
+                                <strong class="under-line">個資宣告</strong>
+                            </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">個資宣告</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
-                                    </div>
-                                    <div class="modal-footer">
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">個資宣告</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            我了解CES 蒐集個人資料僅會用於代辦留遊學等相關項目，並根據台灣個人資料保護法不會外洩或濫用。更多資訊可上<a href="http://www.moj.gov.tw/lp.asp?CtNode=28007&CtUnit=805&BaseDSD=7&mp=001">法務部網站</a>了解。
+                                        </div>
+                                        <div class="modal-footer">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">我已詳閱並同意上述內容
+                                </label>
+                            </div>
                         </div>
-
-                        <div>
-                            <label>
-                                <input type="checkbox">我已詳閱並同意上述內容
-                            </label>
-                        </div>
+                        
                         <div>
                             <button type="submit" class="btn btn-send ">送出</button>
                         </div>

@@ -543,8 +543,9 @@ h6 {
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	padding: 20px 20px 35px;
 	text-align: left;/*center;*/
+    margin-bottom: 25px;
 }
-.hm-course-pods h4, .newsItem_news h4 {
+.hm-course-pods h4, .textbook-h4 {
 	font-family: 'Merriweather', serif;
 	color: #f7c24e;
 	font-weight: 700;
@@ -1334,8 +1335,8 @@ h6 {
 	float: left
 }
 .hm-course-pods {
-	margin-bottom: 25px;
-	padding: 25px 15px;
+	/*margin-bottom: 25px;
+	padding: 25px 15px;*/
 }
 .home-courses .padding-top-bottom-30 {
 	padding-bottom: 0px;
@@ -1344,7 +1345,7 @@ h6 {
 	/*margin-bottom: 0px;*/
 }
 .hm-course-pods h4 {
-	margin: 15px 0;
+	/*margin: 15px 0;*/
 }
 .hm-course-pods p {
 	font-size: 15px;
@@ -1494,7 +1495,7 @@ h6 {
 }
 
 
-.flex-stretch-wrap, .flex-stretch-Item, .flex-stretch-Item-Test, .flex-stretch-768, .flex-stretch-768-Item {
+.flex-stretch-wrap, .flex-stretch-Item, .flex-stretch-Item-Test, .flex-stretch-768, .flex-stretch-768-Item, .flex-stretch-wrap_news, .flex-stretch-Item_news {
     display: flex;
     display: -webkit-flex;
     
@@ -2039,7 +2040,6 @@ h6 {
     background-position: top left;
     padding-left: 85px;
 }
-<<<<<<< HEAD
 
 #reservatoin .info h3 {
     font-size: 15px;
@@ -2070,23 +2070,89 @@ h6 {
     margin-bottom: 3px;
 }
 
+.textbook-item {
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    margin-bottom: 25px;
+}
+
+.flex-stretch-Item_textbook {
+    width: 11%;
+    min-width: 125px;
+    /*flex-grow: 1;
+    -webkit-flex-grow: 1;*/
+}
+
 .newsItem_news {
     
     flex-direction: row;
     -webkit-flex-direction: row;
-
 }
 
 .newsItem-Date_news {
-    margin-right: 15px;
-}
-
-.newsItem_news h4 {
-    margin: 0;
     text-align: center;
 }
 
+.newsItem_news-content {
+    margin-top: 20px;
+    margin-left: 15px;
+}
 
+.flex-stretch-wrap_news {
+        
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    
+        justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.flex-stretch-Item_news {
+    width: 33.3%;
+    min-width: 300px;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+}
+
+.flex-stretch-Item_photos {
+    width: 15%;
+    min-width: 180px;
+    /*flex-grow: 1;
+    -webkit-flex-grow: 1;*/
+}
+
+.search-form {
+    display: flex;
+    display: -webkit-flex;
+    
+    justify-content: center;
+    -webkit-justify-content: center;
+    
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.width150 {
+    width: 100px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.pagination {
+    margin: 0;
+}
+
+.pagination>li>a {
+    color: black;
+}
+
+.pagination>.active>a {
+    color: black;
+    background-color: #f9c543;
+    border-color: #f9c543;
+}
 
 @media (max-width: 850px) {
     .flex-stretch-768 {
@@ -2183,6 +2249,11 @@ h6 {
     .width100-520px {
         width: 100%;
     }
+    
+        
+    .flex-stretch-Item_news {
+        min-width: 100%;
+    }
 }
 
 
@@ -2217,6 +2288,7 @@ h6 {
     .ielts-feature-item-img {
         margin-left: 10px;
     }
+
 
 }
 .book_detail {
