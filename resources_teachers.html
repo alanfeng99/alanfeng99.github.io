@@ -119,7 +119,7 @@
         }
         
         .teacher_detail .info li {
-            background-image: url(../images/list.gif);
+            background-image: url(./images/list.gif);
             background-position: 5px 5px;
         }
         
@@ -171,12 +171,13 @@
         
         #teacher_list .picture,
         .teacher_detail .picture {
-            float: left;
-            height: 100%;
-            width: 100%;
+            /*float: left;*/
+            max-height: 178px;
+            max-width: 178px;
             position: relative;
-            margin-right: 15px;
-            margin-top: 0px;
+            margin: 0px auto;
+            /*margin-right: 15px;
+            margin-top: 0px;*/
         }
         /*
         #teacher_list .teacher_item { border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #CCC; }
@@ -184,7 +185,7 @@
         
         #teacher_list .frame,
         .teacher_detail .frame {
-            background-image: url(../images/teacher_frame.png);
+            background-image: url(./images/teacher_frame.png);
             background-position: 50% 50%;
             background-size: cover;
             height: 100%;
@@ -200,7 +201,7 @@
             display: block;
             position: absolute;
             z-index: 10;
-            background-image: url(../images/more.png);
+            background-image: url(./images/more.png);
             background-position: 25% 25%;
             background-repeat: no-repeat;
             background-position: right bottom;
@@ -241,7 +242,7 @@
         }
         
         .text {
-            background-image: url(../images/ico_reservatoin_exam.png);
+            background-image: url(./images/ico_reservatoin_exam.png);
         }
         /** {
             background-repeat: no-repeat;
@@ -250,11 +251,11 @@
             font-family: Arial;
         */
         
-        .reservation-banner {
-            background: url(../images/banner_teacher.jpg) no-repeat bottom;
+        /*.reservation-banner {
+            background: url(./images/banner_teacher.jpg) no-repeat bottom;
             background-size: cover;
             height: 635px;
-        }
+        }*/
     </style>
 </head>
 
@@ -309,13 +310,6 @@
                             <li><a href="toefl_courses.html">TOEFL課程詳細資訊</a></li>
                         </ul>
                     </li>
-
-                    <!-- <li><a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">線上預約<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">線上預約英文分級測試</a></li>
-                        <li><a href="#">加入English Chat Room</a></li>
-                    </ul>
-                </li>-->
 
                     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">免費講座<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -386,14 +380,18 @@
 
     <!-- Content Start -->
     <div class="container" id="teacher_list">
-        <div class="row">
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher1" href="javascript:;">more</a><img src="images/temp/teacher1.jpg" alt="GREGORY FOLEY"></div>
+        <div class="row col-center">
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture">
+                        <a data-fancybox data-src="#teacher1" href="javascript:;"></a>
+                        <img src="images/temp/teacher1.jpg" alt="GREGORY FOLEY" class="img-circle teacher-pic">
+                    </div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher1" href="javascript:;">GREGORY FOLEY</a><br><em>英國Middlesex大學、主修英國文學與哲學系</em></h4>
+                        <h1><a data-fancybox data-src="#teacher1" href="javascript:;">GREGORY FOLEY</a></h1>
+                        <em>英國Middlesex大學、主修英國文學與哲學系</em>
                         <ul>
                             <li>12年以上的豐富英語教學經驗</li>
                             <li>曾任教於夏恩英語２年</li>
@@ -403,13 +401,16 @@
                     </div>
                 </div>
             </div>
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher2" href="javascript:;">more</a><img src="images/temp/teacher2.jpg" alt="JACK LINGWOOD"></div>
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture">
+                        <a data-fancybox data-src="#teacher2" href="javascript:;"></a>
+                        <img src="images/temp/teacher2.jpg" alt="JACK LINGWOOD" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher2" href="javascript:;">JACK LINGWOOD</a><br><em>英國Abertay Dundee University資訊工程學士</em></h4>
+                        <h1><a data-fancybox data-src="#teacher2" href="javascript:;">JACK LINGWOOD</a></h1>
+                        <em>英國Abertay Dundee University資訊工程學士</em>
                         <ul>
                             <li>擁有10年以上豐富的教學經驗 </li>
                             <li>3年英國移民外僑英語教學經驗</li>
@@ -420,14 +421,14 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher3" href="javascript:;">more</a><img src="images/temp/teacher3.jpg" alt="Frank Jarvis"></div>
+        <div class="row col-center">
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture"><a data-fancybox data-src="#teacher3" href="javascript:;"></a><img src="images/temp/teacher3.jpg" alt="Frank Jarvis" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher3" href="javascript:;">Frank Jarvis</a><br><em>Exeter University 理學士<br>University of East Anglia 科學碩士學位</em></h4>
+                        <h1><a data-fancybox data-src="#teacher3" href="javascript:;">Frank Jarvis</a></h1><em>Exeter University 理學士<br>University of East Anglia 科學碩士學位</em>
                         <ul>
                             <li>25年以上豐富的英語教學經驗</li>
                             <li>曾任教於印尼國際訓練學校2年半</li>
@@ -437,13 +438,13 @@
                     </div>
                 </div>
             </div>
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher4" href="javascript:;">more</a><img src="images/temp/teacher4.jpg" alt="Brendan Cody"></div>
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture"><a data-fancybox data-src="#teacher4" href="javascript:;"></a><img src="images/temp/teacher4.jpg" alt="Brendan Cody" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher4" href="javascript:;">Brendan Cody</a><br><em>美國 The George Washington University 歷史學與國際事務系</em></h4>
+                        <h1><a data-fancybox data-src="#teacher4" href="javascript:;">Brendan Cody</a></h1><em>美國 The George Washington University 歷史學與國際事務系</em>
                         <ul>
                             <li>曾任教於韓國2年BCM Chain語言中心教師</li>
                             <li>曾任教於韓國1年SISA 語言中心教師</li>
@@ -453,14 +454,14 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher5" href="javascript:;">more</a><img src="images/temp/teacher5.jpg" alt="Francis Lavers"></div>
+        <div class="row col-center">
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture"><a data-fancybox data-src="#teacher5" href="javascript:;"></a><img src="images/temp/teacher5.jpg" alt="Francis Lavers" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher5" href="javascript:;">Francis Lavers</a><br><em>University of Wales (Swansea) 歷史學士 <br>Edinburgh Business School MBA</em></h4>
+                        <h1><a data-fancybox data-src="#teacher5" href="javascript:;">Francis Lavers</a></h1><em>University of Wales (Swansea) 歷史學士 <br>Edinburgh Business School MBA</em>
                         <ul>
                             <li> 2年IELTS 課程教學經驗</li>
                             <li>10年以上英語教學經驗</li>
@@ -468,13 +469,13 @@
                     </div>
                 </div>
             </div>
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher8" href="javascript:;">more</a><img src="images/temp/teacher8.jpg" alt="Jenna Cody"></div>
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture"><a data-fancybox data-src="#teacher8" href="javascript:;"></a><img src="images/temp/teacher8.jpg" alt="Jenna Cody" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher8" href="javascript:;">Jenna Cody</a><br><em>美國 The George Washington University 亞洲研究與國際事務系</em></h4>
+                        <h1><a data-fancybox data-src="#teacher8" href="javascript:;">Jenna Cody</a></h1><em>美國 The George Washington University 亞洲研究與國際事務系</em>
                         <ul>
                             <li>10年以上英語教學經驗</li>
                             <li>6年以上企業英語顧問</li>
@@ -485,14 +486,14 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher13" href="javascript:;">more</a><img src="images/temp/teacher13.jpg" alt="David Doern"></div>
+        <div class="row col-center">
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture"><a data-fancybox data-src="#teacher13" href="javascript:;"></a><img src="images/temp/teacher13.jpg" alt="David Doern" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher13" href="javascript:;">David Doern</a><br><em>Queen's University (Kingston) 理學士數學系</em></h4>
+                        <h1><a data-fancybox data-src="#teacher13" href="javascript:;">David Doern</a></h1><em>Queen's University (Kingston) 理學士數學系</em>
                         <ul>
                             <li>12年以上英語教學經驗</li>
                             <li>曾任教於越南、中國、日本、加拿大及台灣</li>
@@ -501,13 +502,13 @@
                     </div>
                 </div>
             </div>
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher14" href="javascript:;">more</a><img src="images/temp/teacher14.jpg" alt="Mary Elizabeth Shippee"></div>
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture"><a data-fancybox data-src="#teacher14" href="javascript:;"></a><img src="images/temp/teacher14.jpg" alt="Mary Elizabeth Shippee" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher14" href="javascript:;">Mary Elizabeth Shippee</a><br><em>University of Wisconsin at Milwaukee 創意寫作與法文系學士</em></h4>
+                        <h1><a data-fancybox data-src="#teacher14" href="javascript:;">Mary Elizabeth Shippee</a></h1><em>University of Wisconsin at Milwaukee 創意寫作與法文系學士</em>
                         <ul>
                             <li>1年以上英語教學經驗</li>
                             <li>曾任教於美國、摩洛哥及台灣</li>
@@ -517,14 +518,14 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="teacher_item">
-                <div class="col-xs-4 col-sm-2">
-                    <div class="picture"><span class="frame"></span><a data-fancybox data-src="#teacher16" href="javascript:;">more</a><img src="images/temp/teacher16.jpg" alt="Nic Resch"></div>
+        <div class="row col-center">
+            <div class="teacher_item col-md-6 row padding-bottom-30">
+                <div class="col-xs-3 col-md-4 width100-520px padding-bottom-15">
+                    <div class="picture"><a data-fancybox data-src="#teacher16" href="javascript:;"></a><img src="images/temp/teacher16.jpg" alt="Nic Resch" class="img-circle teacher-pic"></div>
                 </div>
-                <div class="col-xs-8 col-sm-4">
+                <div class="col-xs-9 col-md-8 width100-520px">
                     <div class="info">
-                        <h4><a data-fancybox data-src="#teacher16" href="javascript:;">Nic Resch</a><br><em>美國University of Texas at San Antonio管理與經濟學系</em></h4>
+                        <h1><a data-fancybox data-src="#teacher16" href="javascript:;">Nic Resch</a></h1><em>美國University of Texas at San Antonio管理與經濟學系</em>
                         <ul>
                             <li>近10年的豐富教學經驗</li>
                             <li>曾任教於香港以及泰國</li>
